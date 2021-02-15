@@ -1,7 +1,7 @@
 window.onload = function(){
 
 const timeInetrval = setInterval(function() {       
-  const giveawayEndDate = new Date("Feb 14, 2021 00:00:00").getTime();
+  const giveawayEndDate = new Date("Feb 19, 2021 00:00:00").getTime();
   const timeDistance = giveawayEndDate - Date.now();
 
   const days = Math.floor(timeDistance / (1000 * 60 * 60 * 24));
