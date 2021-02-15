@@ -1,0 +1,236 @@
+html, body {
+  margin: 0;
+
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #20334F;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,245,249,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+
+}
+.main { 
+  background-image: url("../images/background-image.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 50%;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.header {
+  position: absolute;
+  top: 5%;
+}
+.header__logo {
+  padding: 5% 0 5% 0;
+}
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+}
+.hero__inner {
+  width: 45%;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+}
+.hero__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;  
+  padding: 0;
+}
+.hero__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #20334F;
+}
+
+/* Follow, Timer, End  - Section*/
+.section {
+  display: flex;
+  position: relative;
+}
+.section__item{
+  width: 25%; 
+  background-color: #fff;
+  text-align: center;
+  padding: 2% 0 2% 0;
+  background: rgba(255, 255, 255, 0.96);
+}
+.section__title{
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  mix-blend-mode: normal;
+  opacity: 0.62;  
+  margin:0;
+}
+.section__text {
+  
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41px;
+  margin:0;
+  
+}
+.section__subtext {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  opacity: 0.62;
+  text-transform: uppercase;
+  margin:0;
+}
+
+.section__item--invisible {
+  background: none;
+}
+
+.section__button {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #4D94FF;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0.25px;
+  padding: 19px 70px;
+  cursor: pointer;
+
+}
+/* Clock*/
+.clock{
+  display: flex;
+}
+.clock__item {
+  width: 25%;
+}
+/* Footer */
+.footer {
+  margin: 3% 0 3% 0;
+  text-align: center;
+}
+.footer__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #374250;
+}
+.footer__link {
+  color: #4D94FF;
+}
+
+/* RESPONSIVE */
+
+/* Landscape phones and down */
+@media only screen and (max-width: 480px) {
+  .section {
+    display: block;
+  }
+  .container {
+    width: 95%;
+  }
+  .section__item{
+    width: 100%; 
+  }
+  .hero__inner {
+    width: 100%;
+  }
+  .section__button {
+    position: relative;
+    width: 90%;
+    left: 0%;
+  }
+  .main {
+    background-size: 120%;
+    background-position-x: center;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media only screen and (max-width: 767px) {
+  .hero__inner {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+  .section {
+    display: block;
+  }
+  .section__item{
+    width: 100%; 
+  }
+  .section__button {
+    position: relative;
+    width: 90%;
+    left: 0%;
+  }
+  .section__item--invisible{
+    background-color: #fff;
+  }
+  .main {
+    background-size: 100%;
+    background-position-x: center;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .hero__inner {
+    width: 100%;
+  }
+  .section {
+    display: block;
+  }
+  .section__item{
+    width: 100%; 
+  }
+  .section__button {
+    position: relative; 
+    left: 0%;
+    width: 80%;
+  }
+  .section__item--invisible{
+    background-color: #fff;
+  }
+  .main {
+    background-size: 80%;
+  }
+}
+/* Small desktop */
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+  .section__item{
+    width: 100%; 
+  }
+  .section__button {
+    left: 3%;
+  }
+  .main {
+    background-size: 70%;
+  }
+}
+/* Large desktop */
+@media only screen and (min-width: 1200px) {
+  .main {
+    background-size: 60%;
+  }
+}
